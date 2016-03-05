@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int
+    printf("Testing again", );
 
     return 0;
 }
