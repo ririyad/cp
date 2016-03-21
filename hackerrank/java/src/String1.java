@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.stream.Collector;
 
 /**
  * Created by Rashedul Islam Riyad on 3/21/2016.
