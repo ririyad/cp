@@ -1,4 +1,4 @@
-//not accepted solution
+// not yet accepted
 #include <iostream>
 #include <cstdio>
 using namespace std;
