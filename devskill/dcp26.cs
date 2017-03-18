@@ -10,11 +10,13 @@ namespace devskill
             for(int i = 0; i < testCase; i++)
             {
                 string word = Console.ReadLine();
-                var wordInArray = word.ToCharArray();
-                for(int j = 0; j < wordInArray.Length; j++)
+                string revWord = "";
+                for(int j = word.Length-1; j >= 0; j--)
                 {
-                    Console.WriteLine($"{i}: wordInArray[i]");
+                    revWord = revWord + word[j];
                 }
+
+                Console.WriteLine(revWord);
             }
         }
     }
