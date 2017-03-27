@@ -11,3 +11,4 @@
 !.vscode/extensions.json
 bin/
 obj/
+*.json
