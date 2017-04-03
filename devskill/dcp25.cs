@@ -17,8 +17,8 @@ class dcp25
         {
             string input = Console.ReadLine();
             string revStr = Reverse(input);
-
-            if(input == revStr)
+            // ignore uppercase lowercase according to the problem statement
+            if(StringComparer.OrdinalIgnoreCase.Equals(input, revStr))
                 Console.WriteLine("Yes");
             else
                 Console.WriteLine("No");
