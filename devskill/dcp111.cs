@@ -4,14 +4,15 @@ class dcp111
 {
     static void Main(string[] args)
     {
-        int testCase = Convert.ToInt16(Console.ReadLine());
+        int testCase = int.Parse(Console.ReadLine());
         for(int i = 0; i < testCase; i++)
         {
-            int N = Convert.ToInt32(Console.ReadLine());
+            int N = int.Parse(Console.ReadLine());
             int sum = 0;
             int chocolate = 0;
             int rem = 0;
-            for(int j = 1; j < N; j++)
+            int j = 1;
+            while(true)
             {
                 sum+= j;
                 if(sum == N)
@@ -26,6 +27,7 @@ class dcp111
                     rem = N - (sum - j);
                     break;
                 }
+                j++;
             }
             Console.WriteLine(chocolate);
             Console.WriteLine(rem);
