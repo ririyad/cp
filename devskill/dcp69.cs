@@ -1,6 +1,6 @@
 using System;
 
-class Program
+class dcp69
 {
     static void Main(string[] args)
     {
