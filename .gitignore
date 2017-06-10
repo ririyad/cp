@@ -14,3 +14,6 @@ obj/
 *.json
 .vs/
 *.txt
+*.config
+Properties/
+*.csproj
