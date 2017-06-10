@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestApp1
+namespace ConsoleApp3
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello from test 1");
+            Console.WriteLine("from 3");
         }
     }
 }

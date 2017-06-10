@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestSol1
+namespace Test2
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("from Test solution 1");
+            Console.WriteLine("Hello from test 2");
         }
     }
 }
