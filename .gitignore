@@ -3,7 +3,6 @@
 *.txt
 *.class
 *.o
-*.csproj
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
