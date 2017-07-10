@@ -13,7 +13,7 @@ class dcp196
 
             double result = (-V)/T;
 
-            Console.WriteLine(Math.Round(result, 2));
+            Console.WriteLine(Math.Round(result, 2).ToString("0.00"));
         }
     }
 }
