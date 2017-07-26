@@ -2,15 +2,19 @@
 
 namespace Prime_Number
 {
-    class Program
+    /*
+     * using sieve, find the prime number in range, as give, 1000, store the prime numbers in an array.
+     * for a given number of input, just iterate and output the number
+     */
+    public class Program
     {
         static void Main(string[] args)
         {
-            int N = int.Parse(Console.ReadLine());
-            for(int i = 2; i < N; i++)
+            const int ARRAY_SIZE = 1000;
+            int[] sieve = new int[1010];
+            for(int i = 4; i < ARRAY_SIZE; i+=2)
             {
-                if (IsPrime(i))
-                    Console.Write($"{i} ");
+                //will add code here
             }
         }
 
