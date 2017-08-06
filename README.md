@@ -1,1 +1,1 @@
-This repository contains solved problem of some online programming contest site and some of my practice code (with no particular order).
+This repository contains solved problem of some online programming contest site and some of my practice code (with no particular order). Will try to update regularly. 
