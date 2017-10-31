@@ -1,44 +1,35 @@
-#include <iostream>
+//problem link: https://goo.gl/wnj1we
+
 #include <cstdio>
-#include <cstdlib>
+#include <iostream>
 
 using namespace std;
 
 int main()
 {
-    freopen("in.txt", "r", stdin);
-    int input1, input2, minMoves;
-    while(cin >> input1 >> input2)
+    int a, b;
+    while(scanf("%d %d", &a, &b)==2)
     {
-        if(input1 == -1 && input2 == -1)
+        int res;
+        if(a==-1 && b== -1)
             break;
-        if(input1 > 50 )
+        if(a < b)
         {
-            if(input2 > 50)
-            {
-                minMoves = abs(input1 - input2);
-                cout << minMoves << endl;
-            }
+            if((b-a) > 50)
+                res = 100-(b-a);
             else
-            {
-                minMoves = input1 - input2;
-                cout << minMoves << endl;
-            }
-        }
-        else
-        {
-            if(input2 > 50)
-            {
-                minMoves = 100 - input2 + input1;
-                cout << minMoves << endl;
-            }
-            else
-            {
-                minMoves = input2 - input1;
-                cout << minMoves << endl;
-            }
+                res = b - a;
         }
 
+        else
+        {
+            if((a-b) > 50)
+                res = 100 - (a-b);
+            else
+                res = a - b;
+        }
+
+        printf("%d\n", res);
     }
 
     return 0;

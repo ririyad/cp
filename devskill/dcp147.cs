@@ -18,4 +18,3 @@ namespace dcp147
             Console.WriteLine(sum);
         }
     }
-}

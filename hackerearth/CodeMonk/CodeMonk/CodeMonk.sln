@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.13
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeMonk", "CodeMonk\CodeMonk.csproj", "{CB1F366C-88EF-4EC5-A4FF-E3A772632925}"
 EndProject
@@ -12,6 +12,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find_Product", "Find_Product\Find_Product.csproj", "{C3721AB1-0DE0-4CCC-BBB0-043B8CA110AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prime_Number", "Prime_Number\Prime_Number.csproj", "{86D6E5F5-A000-4718-80C8-AF2EACD66D15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Arrays and Strings", "Arrays and Strings", "{85F4547F-1390-475D-BBF1-107237295E3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Micro_And_Array_Update", "Micro_And_Array_Update\Micro_And_Array_Update.csproj", "{96F8824C-E222-4627-85F4-98A4A9114E32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,10 @@ Global
 		{86D6E5F5-A000-4718-80C8-AF2EACD66D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86D6E5F5-A000-4718-80C8-AF2EACD66D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86D6E5F5-A000-4718-80C8-AF2EACD66D15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96F8824C-E222-4627-85F4-98A4A9114E32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96F8824C-E222-4627-85F4-98A4A9114E32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96F8824C-E222-4627-85F4-98A4A9114E32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96F8824C-E222-4627-85F4-98A4A9114E32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,5 +51,6 @@ Global
 		{49EEDEB4-B191-4E03-9928-C62810BBB5BB} = {E899FC08-DB09-4E6C-AB02-DB3760B00BB4}
 		{C3721AB1-0DE0-4CCC-BBB0-043B8CA110AF} = {E899FC08-DB09-4E6C-AB02-DB3760B00BB4}
 		{86D6E5F5-A000-4718-80C8-AF2EACD66D15} = {E899FC08-DB09-4E6C-AB02-DB3760B00BB4}
+		{96F8824C-E222-4627-85F4-98A4A9114E32} = {85F4547F-1390-475D-BBF1-107237295E3E}
 	EndGlobalSection
 EndGlobal
