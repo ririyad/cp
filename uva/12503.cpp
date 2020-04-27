@@ -1,24 +1,54 @@
-#include <stdio.h>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main()
 {
     int testCase;
-    while(scanf("%d", &testCase)==1)
-    {
-        while(testCase--)
-        {
-            int n;
-            cin >> n;
-            for(int i = 0; i< n; i++)
-            {
+    cin >> testCase;
 
+    while (testCase--)
+    {
+        int n, p = 0;
+        string inst1, inst2,  movement[110];
+        int anotherpos;
+        cin >> n;
+
+        for(int i = 1; i <= n; i++)
+        {
+            cin >> inst1;
+            if(inst1 == "LEFT")
+            {
+                p--;
+                movement[i] = inst1;
+            }
+                
+            else if(inst1 == "RIGHT")
+            {
+                p++;
+                movement[i] = inst1;
+            }
+                
+            else
+            {
+                cin >> inst2 >> anotherpos;
+                if(movement[anotherpos] == "LEFT")
+                {
+                    p--;
+                    movement[i] = "LEFT";
+                }
+                 
+                else if(movement[anotherpos] == "RIGHT")
+                {
+                     p++;
+                     movement[i] = "RIGHT";
+                }
+                   
             }
 
         }
+          cout << p << endl;
     }
-
-    return 0;
+    
 }
