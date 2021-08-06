@@ -20,6 +20,7 @@ int main() {
         }
         long long ans = 0;
         for(int i = 1; i < n; i++) {
+
             ans = max(ans, 1ll * v[i] * v[i-1]);
         }
         cout << ans << "\n";
