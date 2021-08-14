@@ -1,7 +1,8 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
-int countOneFromBin(int &num) {
+int countOneFromBin(int num) {
     int one= 0, temp;
     while(num > 0) {
         temp = num % 2;
@@ -11,8 +12,16 @@ int countOneFromBin(int &num) {
     return one;
 }
 
-int countOneFromHex(int &num) {
-
+int countFromHex(int num) {
+    int sixpow = 0, res = 0;
+    int mod;
+    while(num > 0) {
+        mod = num % 10;
+        res = res + mod * pow(16, sixpow);
+        sixpow++;
+        num /= 10;
+    }
+    return res;
 }
 
 int main() {
@@ -24,7 +33,10 @@ int main() {
     while(t--) {
         int num;
         cin >> num;
-        int bin = countOneFromBin(num);
-        int hex = countOneFromHex(num);
+        int bin1 = countOneFromBin(num);
+        int hextoDec = countFromHex(num);
+        int bin2 = countOneFromBin(hextoDec);
+
+        cout << bin1 << " " <<  bin2 << "\n";
     }
 }
