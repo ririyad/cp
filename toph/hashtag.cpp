@@ -8,7 +8,6 @@ int main() {
     cin.tie(nullptr);
 
     string str;
-    char b[101];
     getline(cin, str);
     for(int i = 0; str[i]; i++) {
         if(str[i] == ' ') continue;
