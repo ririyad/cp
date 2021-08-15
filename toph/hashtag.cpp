@@ -1,6 +1,5 @@
 #include <iostream>
-#include <string>
-#include <cctype>
+#include <algorithm>
 
 using namespace std;
 
@@ -9,14 +8,12 @@ int main() {
     cin.tie(nullptr);
 
     string str;
+    char b[101];
     getline(cin, str);
-    int count = 0;
     for(int i = 0; str[i]; i++) {
-        
-        if(str[i] != ' ') {
-            str[count++] = str[i];
-        }
+        if(str[i] == ' ') continue;
+        cout << str[i];
     }
-    str[count] = '\0';
-    cout << str << "\n";
+    cout << "\n";
 }
+
