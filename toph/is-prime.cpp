@@ -1,4 +1,4 @@
-// Online Judge issue
+// Problem link: https://toph.co/p/is-prime
 
 #include <iostream>
 #include <cmath>
