@@ -1,3 +1,5 @@
+// Problem link: https://www.codechef.com/submit/WEIGHTBL
+
 #include <iostream>
 using namespace std;
 
