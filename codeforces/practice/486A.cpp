@@ -9,8 +9,8 @@ int main() {
     long long f;
     while(cin >> f) {
         if(f % 2 == 0) 
-            cout << f/2 << endl;
+            cout << f/2.0 << endl;
         else
-            cout << -(f+1)/2 << endl;
+            cout << -(f+1)/2.0 << endl;
     }
 }
