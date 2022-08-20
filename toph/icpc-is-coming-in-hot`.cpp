@@ -1,27 +1,29 @@
-// Problem link: https://toph.co/p/icpc-is-coming-in-hot
-
-// Vefdict: WA
-
+// Problem Link: https://toph.co/p/icpc-is-coming-in-hot
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
-    long long unsigned num;
-    while(cin >> num) {
-        int freq[10] = {0};
-
-        while(num > 0) {
-            int digit = num % 10;
-            freq[digit]++;
-            num = num / 10;
+    string inp;
+    while(cin >> inp) {
+        string str = "0123456789";
+        int arr[10] = {0};
+        for(int i = 0; i < inp.size(); i++) {
+            for(int j = 0; j < 10; j++) {
+                if(inp[i] == str[j]) {
+                    arr[j]++;
+                }
+            }
         }
-        int most_freq = 0;
-        for(int i = 0; i < 10; i++) {
-            if(freq[i] > most_freq)
-                most_freq = i;
-        }
-
-        cout << most_freq << endl;
+        int max_count = 0;
+        int res;
+        for(int k = 0; k < 10; k++) {
+            if(arr[k] > max_count) {
+                max_count = arr[k];
+                res = k;
+            }
+        } 
+        cout << res << endl;
     }
 }
